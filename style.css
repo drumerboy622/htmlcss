@@ -1,0 +1,42 @@
+﻿/*
+Created by: Matthew Solbrack
+Date: 10/04/2018
+Description: CSS - Style for content.html. Created for assignment HTML/CSS.
+*/
+
+
+table{
+	border-style:solid;
+}
+th, td {
+	border-style:solid;
+}
+
+tbody th {
+	font-weight: normal;
+	font-style: italic;
+}
+
+tbody tr:nth-of-type(odd) {
+	background: gainsboro;
+}
+
+tbody tr:nth-of-type(even) {
+	background: silver;
+}
+
+.outer-content {
+  margin-top: 20px;
+  position: left;
+  background: pink;
+  width: 75%; 
+  padding: 20px;
+}
+
+.inner-content {
+  background: dodgerblue;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
