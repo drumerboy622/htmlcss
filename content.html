@@ -1,0 +1,229 @@
+<!-- 
+Created by: Matthew Solbrack
+Date: 10/04/2018
+Description: HTML uses style.css for stylesheet. Created for assignment HTML/CSS
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8">
+  <title>HW_ASSIGN: HTML/CSS</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+
+ <body>
+
+<!-- Introduction -->
+Matthew Solbrack <br />
+Web Development (CS290/400) <br />
+HW Assignment: HTML/CSS <br />
+<br />
+
+
+<ol>
+
+<!-- 1. Create a 6x6 table (inclusive of the header row) and fill in the table with your own contents.
+
+The upper left cell should be empty. The others should be non-empty.
+The table should have a caption detailing the contents of the table.
+The table should have a header section, all the cells in this section should have bold text (this is default).
+The first column of the table should have header cells that have italic text (these should not be bold).
+The table should have a footer section (this row is not counted in 6 rows in the table) made up of two cells, one should be 2 columns wide, the other should be 4 columns wide. -->
+
+
+ <li><strong>6x6 Table</strong><br><br>
+<table>
+ <caption>Tasks to be completed Monday Through Friday (ranked by importance)</caption>
+ <thead>
+  <tr>
+   <th> 
+   <th> Monday
+   <th> Tuesday
+   <th> Wednesday
+   <th> Thursday
+   <th> Friday
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <th> 1     
+   <td> Work
+   <td> Work
+   <td> Work
+   <td>	CS290 - Study
+   <td> CS340 - Study 
+  </tr>
+  <tr>
+   <th> 2
+   <td> CS290 - Study
+   <td> CS290 - Study
+   <td> CS290 - Study
+   <td> CS340 - Study
+   <td> CS290 - Study
+  </tr>
+  <tr>
+   <th> 3
+   <td> CS261 - Study
+   <td> CS261 - Study
+   <td> CS261 - Study
+   <td> CS261 - Study
+   <td> CS261 - Study
+  </tr>
+  <tr>
+   <th> 4
+   <td> CS340 - Study
+   <td> CS340 - Study
+   <td> CS340 - Study
+   <td> Resume Building
+   <td> Food Prep
+  </tr>
+  <tr>
+   <th> 5
+   <td> Laundry
+   <td>	Clean House
+   <td> Workout
+   <td> Work on blog
+   <td> Party
+  </tr>
+  <tr>
+   <th> 6
+   <td> Workout
+   <td> Workout
+   <td> Food Prep
+   <td> Watch Football
+   <td> Party
+  </tr>
+ </tbody>
+ <tfoot>
+  <tr>
+   <td colspan="2"> Footer 1
+   <td colspan="4"> Footer 2
+  </tr>
+ </tfoot>
+</table>
+</li>
+<br><br>
+
+<!-- 2. Create a list (ul, ol or dl) with at least 3 entries. -->
+
+<li> <strong>List</strong><br>
+<ol>
+ <li>For the Money</li>
+ <li>For the Show</li>
+ <li>To get ready</li>
+ <li>To Go</li>
+</ol>
+</li> 
+<br> <br>
+
+<!-- 3. Create a div that is aligned to the left side of the page and takes up 3/4 of the page width, has a space of 20px between it and the previous element and has a class of 'outer-content'.
+
+Its background should be pink (or any color that looks like pink).
+Inside that div have another div called 'inner-content'.
+Its background should be blue (any kind of blue works).
+It should take up 3/4 of the parent divs width and should be centered. -->
+
+<li> <strong> DIV </strong>
+<div class="outer-content">
+<div class="inner-content">
+Some Content
+</div>
+</div>
+</li>
+<br />
+
+<!-- 4. Create two forms. One should submit via a post, the other via a get, they should have identical content.
+
+They should submit to http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php to better facilitate testing.
+There should be 4 input types
+A text input with a name attribute of 'text_input'
+A number input with a name attribute of 'numerical_input'
+A password input with a name attribute of 'password_input'
+A set of radio inputs
+They should be named 'candy'
+These options should exist in this order
+Snickers
+Skittles
+Mentos -->
+
+<li> 
+ <ol type="a">
+ <li> <strong> POST Form </strong>
+<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+    <fieldset>
+        <legend>Get Data</legend>
+       <fieldset>
+        <label>Name:
+            <input type="text" name="text_input" size="30" maxlength="30">
+        </label>
+       </fieldset>
+        
+         <fieldset>
+        <label>Number:
+            <input type="number" name="numerical_input" size="30" maxlength="30">
+        </label>
+        </fieldset>
+         <fieldset>
+        <label>Password:
+            <input type="password" name="password_input" size="30" maxlength="30">
+        </label>
+        </fieldset>
+    
+    <fieldset>
+        Select Between
+            <label>
+                <input type="radio" name="candy" value="Snickers" />Snickers</label>
+            <label>
+                <input type="radio" name="candy" value="Skittles" />Skittles</label>
+            <label>
+                <input type="radio" name="candy" value="Mentos" />Mentos</label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" />
+    </fieldset>
+    </fieldset>
+</form>
+ </li>
+<br><br>
+ <li> <strong> GET Form </strong>
+<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+    <fieldset>
+        <legend>Get Data</legend>
+       <fieldset>
+        <label>Name:
+            <input type="text" name="text_input" size="30" maxlength="30">
+        </label>
+       </fieldset>
+        
+         <fieldset>
+        <label>Number:
+            <input type="number" name="numerical_input" size="30" maxlength="30">
+        </label>
+        </fieldset>
+         <fieldset>
+        <label>Password:
+            <input type="password" name="password_input" size="30" maxlength="30">
+        </label>
+        </fieldset>
+    
+    <fieldset>
+        Select Between
+            <label>
+                <input type="radio" name="candy" value="Snickers" />Snickers</label>
+            <label>
+                <input type="radio" name="candy" value="Skittles" />Skittles</label>
+            <label>
+                <input type="radio" name="candy" value="Mentos" />Mentos</label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" />
+    </fieldset>
+    </fieldset>
+</form>
+ </li>
+ </ol>
+</li>
+ </body>
+</html>
